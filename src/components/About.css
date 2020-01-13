@@ -1,0 +1,20 @@
+
+.myForm{
+    width: 50%;
+    background-color: rgb(115, 115, 255);
+    justify-content: center;
+    color: whitesmoke;
+    padding: 10px;
+    margin: auto;
+}
+
+.login{
+    width: 50%;
+    background-color: gray;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 10px;
+    margin: auto;
+
+    border-radius: 10px;
+}
