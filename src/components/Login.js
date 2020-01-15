@@ -29,9 +29,9 @@ export default class Login extends Component {
                 <button class="btn btn-primary" type="submit">Sign In</button>
               
                 <p className="forgot-password text-center">
-                Don't Have Acoount <Link to ='/Register'>Click here !!!</Link><br/>
+                Don't Have Account <Link style={{ textDecoration: 'none', color:'white'}}  to='/Register'>Click here!</Link><br/>
 
-                    Forgot <a href="#">password?</a>
+                    Forgot <a style={{ textDecoration: 'none', color:'white'}}  href="#">password?</a>
 
                 </p>
             </form>

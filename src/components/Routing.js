@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React,{ useState } from 'react'
 import {BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom'
 import About from './About'
 import Contact from './Contact'
@@ -7,29 +7,70 @@ import Register from './Register'
 import Login from './Login'
 import App from '../App'
 
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    NavbarText
+  } from 'reactstrap';
+
+
+
 export default function Routing() {
+
+    
     return (
         <Router>
+        
         <div>
-            <ul>
-                <li>
-                    <Link to= '/'>Home</Link>
-                </li>
-                <li>
-                    <Link to= '/about'>About</Link>
-                </li>
-                <li>
-                    <Link to= '/contact'>Contact</Link>
-                </li>
+            <div className="Main">
+        <Navbar light expand="md" >
 
-                <li>
-                    <Link to= '/Register'>Register</Link>
-                </li>
-                <li>
-                    <Link to= '/Login'>Login</Link>
-                </li>
+        <Nav className="mr-auto Navbar" navbar>
 
-            </ul>
+            <NavItem ><Link style={{ textDecoration: 'none' }}  to= '/'>Home</Link></NavItem>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <NavItem><Link style={{ textDecoration: 'none'}}  to= '/about'>About</Link></NavItem>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <NavItem><Link  style={{ textDecoration: 'none'}} to= '/contact'>Contact</Link></NavItem>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <NavItem><Link style={{ textDecoration: 'none'}}  to= '#'>Blog</Link></NavItem>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+            <UncontrolledDropdown nav inNavbar className="dropdown">
+              <DropdownToggle nav caret style={{ color: 'blue'}}>
+                Account
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                <NavItem><Link style={{ textDecoration: 'none'}}  to= '/Login'>Login</Link></NavItem>
+                </DropdownItem>
+                <DropdownItem>
+                <NavItem><Link style={{ textDecoration: 'none'}}  to= '/Register'>Register</Link></NavItem>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  Reset
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            </Nav>
+
+           
+            
+            </Navbar>
+            </div>
 
             <Switch>
 

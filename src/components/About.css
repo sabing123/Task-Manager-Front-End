@@ -6,6 +6,8 @@
     color: whitesmoke;
     padding: 10px;
     margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .login{
@@ -15,6 +17,35 @@
     color: whitesmoke;
     padding: 10px;
     margin: auto;
-
+    margin-top: 20px;
     border-radius: 10px;
+    box-shadow: 12px 24px 12px 1px rgba(0, 0, 0.5, 0.3);
+}
+
+.Main{
+    width: 60%;
+    margin: auto;
+    padding: 20 px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.Navbar
+{
+
+    text-align: center;
+    margin: auto;
+    padding: 20 px;
+background-color: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.dropdown{
+
+    margin-top: -5px;
+
+   border-radius: 50px;
+   /* box-shadow: 1px 10px blanchedalmond; */
+   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+
 }

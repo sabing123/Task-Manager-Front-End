@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
 export default class Counter extends Component {

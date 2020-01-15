@@ -95,7 +95,7 @@ export default class Register extends Component {
   </div> */}
   <button class="btn btn-primary" type="submit" onClick={this.handleSubmit}>Sign Up</button>
   <br/>
-  Already Have Acoount <Link to ='/Login'>Click here !!!</Link><br/>
+  Already Have Acoount <Link to='/Login'>Click here !</Link><br/>
         </div>
       </div>
     )
